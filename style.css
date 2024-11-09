@@ -1,0 +1,165 @@
+/* Definição geral do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaf2f8;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px; /* Espaço para o rodapé fixo */
+}
+
+/* Estilo do cabeçalho principal */
+h1 {
+    text-align: center;
+    color: #2980b9;
+    margin: 40px 0 20px;
+    font-size: 2.5em;
+    animation: fadeInDown 1s;
+}
+
+/* Animação de entrada */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para os subtítulos */
+h2 {
+    color: #3498db;
+    margin: 30px 0 15px;
+    padding-left: 15px;
+    border-left: 5px solid #2980b9;
+}
+
+/* Estilização de parágrafos */
+p {
+    line-height: 1.8;
+    padding: 0 15px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Estilo para listas */
+ul {
+    padding-left: 40px;
+    list-style: square;
+}
+
+li {
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da tabela */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6f7;
+}
+
+tr:hover td {
+    background-color: #d6eaf8;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Efeitos para links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #21618c;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        margin: 20px 0 10px;
+    }
+    h2 {
+        font-size: 1.5em;
+        padding-left: 10px;
+    }
+    p {
+        padding: 0 10px;
+    }
+    table {
+        width: 100%;
+        font-size: 0.85em;
+    }
+    th, td {
+        padding: 10px;
+    }
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p, ul {
+        padding: 0 5px;
+    }
+    table {
+        width: 100%;
+        font-size: 0.75em;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
